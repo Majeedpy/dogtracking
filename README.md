@@ -14,7 +14,7 @@ Get all dogs:
 http://dogtracking-majeedapps.rhcloud.com/dogs
 
 Get a certain dog: 
-http://dogtracking-majeedapps.rhcloud.com/dog/{id}
+http://dogtracking-majeedapps.rhcloud.com/dogs/{id}
 
 Delete a dog: 
 http://dogtracking-majeedapps.rhcloud.com/delete/{id}
