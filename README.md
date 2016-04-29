@@ -6,7 +6,7 @@ This project is created to track dogs on the field. It provides functionalities 
 To install this project, download the source code, open it with and IDE and start working with it. You can export the java project as a war file and deploy it in your application.
 ## Usage
 The project can be used from the client web site created: 
-http://dogtracking-majeedapps.rhcloud.com/
+http://dogtracking-majeedapps.rhcloud.com/index.html
 
 The web services that are supported by this app include:
 
