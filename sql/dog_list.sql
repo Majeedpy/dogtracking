@@ -1,0 +1,56 @@
+-- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
+--
+-- Host: localhost    Database: dogtracking
+-- ------------------------------------------------------
+-- Server version	5.7.12-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `dog_list`
+--
+USE `dogtracking`;
+DROP TABLE IF EXISTS `dog_list`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `dog_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `weight` int(11) DEFAULT NULL,
+  `name` varchar(100) NOT NULL,
+  `heartBeat` int(11) DEFAULT NULL,
+  `temperature` int(11) DEFAULT NULL,
+  `latitude` decimal(15,4) DEFAULT NULL,
+  `longitude` decimal(15,4) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `dog_list`
+--
+
+LOCK TABLES `dog_list` WRITE;
+/*!40000 ALTER TABLE `dog_list` DISABLE KEYS */;
+INSERT INTO `dog_list` VALUES (1,40,'Nike',120,25,51.0486,-114.0708),(3,38,'Jack',118,27,51.0488,-114.0710),(4,43,'Karma',123,28,51.0490,-114.0705),(5,48,'abol',128,25,51.0490,-114.0715),(19,42,'ezat',120,26,51.0480,-114.0725),(20,28,'bool',150,28,51.0495,-114.0730),(21,25,'abas',128,29,51.0495,-114.0735);
+/*!40000 ALTER TABLE `dog_list` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-04-28 13:55:44
